@@ -14,8 +14,8 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 
-st.set_page_config(page_title="Pronostici PREMIERE LEAGUE con il Machine Learning")
-st.title('Pronostici partite con il Machine Learning')
+st.set_page_config(page_title="Pronostici con il Machine Learning")
+st.title('Pronostici partite PREMIERE LEAGUE con il Machine Learning')
 st.header('Pronostici partite per la stagione in corso')
 st.write(
     "Benvenuto all'applicazione Pronostici partite con il Machine Learning. "
