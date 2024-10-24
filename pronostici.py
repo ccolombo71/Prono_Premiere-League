@@ -18,8 +18,8 @@ st.set_page_config(page_title="Pronostici Serie A con il Machine Learning")
 st.title('Pronostici partite di Serie A con il Machine Learning')
 st.header('Pronostici partite di Serie A per la stagione in corso')
 st.write(
-    "Benvenuto all'applicazione Pronostici partite di Serie A con il Machine Learning. "
-    "Questa applicazione utilizza modelli di Machine Learning per predire gli esiti delle partite di calcio della Serie A italiana. "
+    "Benvenuto all'applicazione Pronostici partite con il Machine Learning. "
+    "Questa applicazione utilizza modelli di Machine Learning per predire gli esiti delle partite di calcio "
     "Scorri verso il basso per vedere le previsioni delle prossime partite e la classifica prevista."
 )
 np.random.seed(2)
@@ -293,11 +293,11 @@ st.table(prossime_partite)
 # Aggiungi elementi SEO
 st.write("""
     <meta name="description" content="MOdello di Machine Learning per la predizione dei risultati delle partite di Serie A">
-    <meta name="keywords" content="Serie A, predizioni, pronostici, Umberto Bertonelli, drelegantia, python">
-    <meta name="author" content="Umberto Bertonelli">
-    <link rel="canonical" href="https://umbertobertonelli.it">
+    <meta name="keywords" content="Serie A, predizioni, pronostici, Christian , drelegantia, python">
+    <meta name="author" content="Christian">
+    <link rel="canonical" href="https://#">
 """, unsafe_allow_html=True)
 
 # Aggiungi il link al tuo sito
-st.write("Questa app è stata creata da [Umberto Bertonelli](https://umbertobertonelli.it).")
-st.write("La documentazione completa è disponibile [qui](https://github.com/DrElegantia/pronostici/tree/main).")
+st.write("Questa app è stata creata da [Christian](https://#).")
+st.write("La documentazione completa è disponibile [qui](https://#).")
