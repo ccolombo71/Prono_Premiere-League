@@ -40,7 +40,7 @@ def converti_data(data_str):
 def load_dataframes():
     dataframes = {}
     for year in range(5, 24):
-        url = f'https://www.football-data.co.uk/mmz4281/{year:02d}{year + 1:02d}/G1.csv'
+        url = f'https://www.football-data.co.uk/mmz4281/{year:02d}{year + 1:02d}/I1.csv'
         df_name = f'df{year:02d}'
         globals()[df_name] = pd.read_csv(url)
         dataframes[df_name] = globals()[df_name]
