@@ -99,7 +99,7 @@ platformdirs
 plotly
 prometheus-client
 prompt-toolkit
-protobuf
+protobuf==4.25.1
 psutil
 ptyprocess
 pure-eval
