@@ -14,7 +14,7 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 
-st.set_page_config(page_title="Pronostici con il Machine Learning")
+st.set_page_config(page_title="Pronostici PREMIERE LEAGUE con il Machine Learning")
 st.title('Pronostici partite con il Machine Learning')
 st.header('Pronostici partite per la stagione in corso')
 st.write(
@@ -292,8 +292,8 @@ st.table(prossime_partite)
 
 # Aggiungi elementi SEO
 st.write("""
-    <meta name="description" content="MOdello di Machine Learning per la predizione dei risultati delle partite di Serie A">
-    <meta name="keywords" content="Serie A, predizioni, pronostici, Christian , drelegantia, python">
+    <meta name="description" content="Modello di Machine Learning per la predizione dei risultati delle partite">
+    <meta name="keywords" content="predizioni, pronostici, Christian , drelegantia, python">
     <meta name="author" content="Christian">
     <link rel="canonical" href="https://#">
 """, unsafe_allow_html=True)
