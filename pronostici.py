@@ -40,7 +40,7 @@ def converti_data(data_str):
 def load_dataframes():
     dataframes = {}
     for year in range(5, 24):
-        url = f'https://www.football-data.co.uk/mmz4281/{year:02d}{year + 1:02d}/I1.csv'
+        url = f'https://www.football-data.co.uk/mmz4281/{year:02d}{year + 1:02d}/E0.csv'
         df_name = f'df{year:02d}'
         globals()[df_name] = pd.read_csv(url)
         dataframes[df_name] = globals()[df_name]
@@ -159,7 +159,7 @@ st.markdown(
 
 
 
-url = 'https://fbref.com/it/comp/11/calendario/Risultati-e-partite-di-Serie-A'
+url = 'https://fbref.com/it/comp/9/calendario/Risultati-e-partite-di-Premier-League'
 response = requests.get(url)
 soup = BeautifulSoup(response.text, 'html.parser')
 
@@ -190,8 +190,8 @@ df_forecast= df_forecast[df_forecast['Data'] > data_attuale]
 df_forecast = df_forecast.rename(columns={'Casa': 'HomeTeam', 'Ospiti': 'AwayTeam'})
 
 df_forecast=df_forecast[['Data','HomeTeam', 'AwayTeam']]
-df_forecast['HomeTeam'] = df_forecast['HomeTeam'].replace('Hellas Verona', 'Verona')
-df_forecast['AwayTeam'] = df_forecast['AwayTeam'].replace('Hellas Verona', 'Verona')
+# df_forecast['HomeTeam'] = df_forecast['HomeTeam'].replace('Hellas Verona', 'Verona')
+# df_forecast['AwayTeam'] = df_forecast['AwayTeam'].replace('Hellas Verona', 'Verona')
 df_forecast.reset_index(inplace=True)
 
 X_forecast = df_forecast[['HomeTeam', 'AwayTeam']]
