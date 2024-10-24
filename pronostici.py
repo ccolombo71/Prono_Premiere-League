@@ -14,9 +14,9 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 
-st.set_page_config(page_title="Pronostici Serie A con il Machine Learning")
-st.title('Pronostici partite di Serie A con il Machine Learning')
-st.header('Pronostici partite di Serie A per la stagione in corso')
+st.set_page_config(page_title="Pronostici con il Machine Learning")
+st.title('Pronostici partite con il Machine Learning')
+st.header('Pronostici partite per la stagione in corso')
 st.write(
     "Benvenuto all'applicazione Pronostici partite con il Machine Learning. "
     "Questa applicazione utilizza modelli di Machine Learning per predire gli esiti delle partite di calcio "
@@ -40,7 +40,7 @@ def converti_data(data_str):
 def load_dataframes():
     dataframes = {}
     for year in range(5, 24):
-        url = f'https://www.football-data.co.uk/mmz4281/{year:02d}{year + 1:02d}/E1.csv'
+        url = f'https://www.football-data.co.uk/mmz4281/{year:02d}{year + 1:02d}/I2.csv'
         df_name = f'df{year:02d}'
         globals()[df_name] = pd.read_csv(url)
         dataframes[df_name] = globals()[df_name]
